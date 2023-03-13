@@ -6,7 +6,7 @@ const User = require('../../models/user')
 
 //設定路由：接住表單輸入之原始網址，並將頁面導向顯示縮短網址
 router.post('/', (req, res) => {
-  const { firstName, email, password } = req.body
+  const { email, password } = req.body
 
   //搜尋資料庫是否有先前已產生過該網址之短網址
   User.findOne({ email, password })
