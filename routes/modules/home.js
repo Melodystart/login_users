@@ -6,7 +6,7 @@ const User = require('../../models/user')
 
 // 設定路由：首頁
 router.get('/', (req, res) => {
-  res.render('index')
+  res.render ('index')
 })
 
 // 匯出路由模組
